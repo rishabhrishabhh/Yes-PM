@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yes PM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Yes PM</h1>
+  <p class="tagline">Instant, precedent-grounded answers for real PM problems.</p>
+</header>
+
+<nav class="tabs">
+  <button class="tab-btn active" data-tab="unstuck">Get Unstuck</button>
+  <button class="tab-btn" data-tab="submit">Submit a Case</button>
+</nav>
+
+<main>
+  <section id="unstuck" class="tab-content active">
+    <h2>Describe your situation</h2>
+    <textarea id="situationInput" rows="6" placeholder="e.g. Engagement dropped 12% after our redesign shipped two weeks ago..."></textarea>
+    <button id="findPrecedentBtn">Find precedent</button>
+    <div id="results"></div>
+  </section>
+
+  <section id="submit" class="tab-content">
+    <h2>Contribute a case</h2>
+    <form id="caseForm">
+      <input type="text" id="caseId" placeholder="case_id (e.g. case-001)" required>
+      <input type="text" id="title" placeholder="Case title" required>
+
+      <div class="metadata-row">
+        <input type="text" id="framework" placeholder="Framework (e.g. RICE)">
+        <input type="text" id="industry" placeholder="Industry">
+        <input type="text" id="companyStage" placeholder="Company stage">
+        <input type="text" id="problemType" placeholder="Problem type">
+      </div>
+
+      <textarea id="situation" placeholder="Situation — the setup and context"></textarea>
+      <textarea id="stakes" placeholder="Stakes — what was at risk"></textarea>
+      <textarea id="diagnosis" placeholder="Diagnosis — how it was analyzed"></textarea>
+      <textarea id="decision" placeholder="Decision — what was actually done"></textarea>
+      <textarea id="outcome" placeholder="Outcome — result and metrics"></textarea>
+      <textarea id="precedent" placeholder="Precedent line — one sentence takeaway"></textarea>
+
+      <button type="submit">Upload case</button>
+    </form>
+    <div id="submitStatus"></div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
