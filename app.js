@@ -2,14 +2,58 @@
 const WORKER_URL = "https://yes-pm-worker.YOUR_SUBDOMAIN.workers.dev";
 
 // --- Tab switching ---
+let browseLoaded = false;
+
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
     document.querySelectorAll(".tab-content").forEach((c) => c.classList.remove("active"));
     btn.classList.add("active");
     document.getElementById(btn.dataset.tab).classList.add("active");
+
+    // Lazy-load the case library the first time this tab is opened
+    if (btn.dataset.tab === "browse" && !browseLoaded) {
+      loadBrowseList();
+    }
   });
 });
+
+// --- Browse and Learn ---
+async function loadBrowseList() {
+  const listDiv = document.getElementById("browseList");
+  try {
+    const res = await fetch(`${WORKER_URL}/api/browse`);
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    browseLoaded = true;
+
+    if (!data.cases || data.cases.length === 0) {
+      listDiv.innerHTML = "<p>No cases in the library yet. Submit one to get started.</p>";
+      return;
+    }
+
+    listDiv.innerHTML = data.cases
+      .map(
+        (c) => `
+        <div class="case-card">
+          <h3>${c.title}</h3>
+          <p class="score">${c.framework || "no framework tagged"} · ${c.industry || "industry unspecified"} · ${c.company_stage || "stage unspecified"}</p>
+          <p class="precedent-line"><strong>Precedent:</strong> ${c.sections.precedent || ""}</p>
+          <details>
+            <summary>Full case</summary>
+            <p><strong>Situation:</strong> ${c.sections.situation || ""}</p>
+            <p><strong>Stakes:</strong> ${c.sections.stakes || ""}</p>
+            <p><strong>Diagnosis:</strong> ${c.sections.diagnosis || ""}</p>
+            <p><strong>Decision:</strong> ${c.sections.decision || ""}</p>
+            <p><strong>Outcome:</strong> ${c.sections.outcome || ""}</p>
+          </details>
+        </div>`
+      )
+      .join("");
+  } catch (err) {
+    listDiv.innerHTML = `<p class="error">Couldn't load the library: ${err.message}</p>`;
+  }
+}
 
 // --- Get Unstuck ---
 document.getElementById("findPrecedentBtn").addEventListener("click", async () => {
