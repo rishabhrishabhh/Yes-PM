@@ -15,6 +15,7 @@
 
 <nav class="tabs">
   <button class="tab-btn active" data-tab="unstuck">Get Unstuck</button>
+  <button class="tab-btn" data-tab="browse">Browse & Learn</button>
   <button class="tab-btn" data-tab="submit">Submit a Case</button>
 </nav>
 
@@ -24,6 +25,11 @@
     <textarea id="situationInput" rows="6" placeholder="e.g. Engagement dropped 12% after our redesign shipped two weeks ago..."></textarea>
     <button id="findPrecedentBtn">Find precedent</button>
     <div id="results"></div>
+  </section>
+
+  <section id="browse" class="tab-content">
+    <h2>Browse the case library</h2>
+    <div id="browseList"><p>Loading cases...</p></div>
   </section>
 
   <section id="submit" class="tab-content">
