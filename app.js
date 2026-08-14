@@ -1,5 +1,5 @@
 // Replace this with your deployed Worker URL after Step 4 of the deploy guide
-const WORKER_URL = "https://yes-pm-worker.YOUR_SUBDOMAIN.workers.dev";
+const WORKER_URL = "https://yes-pm-worker.rishabhukrishabh.workers.dev";
 
 // --- Tab switching ---
 let browseLoaded = false;
