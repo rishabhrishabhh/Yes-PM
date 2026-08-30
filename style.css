@@ -4,26 +4,26 @@
    ============================================================ */
 
 :root {
-  --paper: #F5F4EF;
-  --paper-dim: #EEECE4;
+  --paper: #F2F5FB;
+  --paper-dim: #E7ECF6;
   --panel: #FFFFFF;
-  --ink: #14161F;
-  --ink-soft: #565A66;
-  --ink-faint: #8A8D97;
-  --line: #DEDAD0;
-  --line-soft: #E9E6DD;
+  --ink: #10152B;
+  --ink-soft: #4B5468;
+  --ink-faint: #838BA0;
+  --line: #D6DEEC;
+  --line-soft: #E3E9F4;
 
-  --navy: #12162A;
-  --navy-soft: #1D2238;
-  --navy-line: #333A56;
-  --paper-on-navy: #EDEBE2;
-  --ink-soft-on-navy: #A6A9BC;
+  --navy: #0C1330;
+  --navy-soft: #17203F;
+  --navy-line: #2B3560;
+  --paper-on-navy: #E9EDF9;
+  --ink-soft-on-navy: #A6ACC6;
 
-  --amber: #C1852B;
-  --amber-deep: #9C6A1D;
-  --amber-tint: #F3E4C8;
-  --sage: #55725F;
-  --sage-tint: #E1EAE3;
+  --amber: #2E6BD6;
+  --amber-deep: #16388C;
+  --amber-tint: #DCE8FB;
+  --sage: #2E7D6B;
+  --sage-tint: #DFF0EA;
   --flag: #B0442F;
   --flag-tint: #F5E1DC;
 
@@ -426,6 +426,13 @@ textarea { resize: vertical; min-height: 90px; }
 }
 .category-pill:hover { border-color: var(--ink); color: var(--ink); }
 .category-pill.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.category-pill.is-empty { opacity: 0.5; }
+.pill-count {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: inherit;
+  opacity: 0.65;
+}
 
 .browse-results {
   display: grid;
