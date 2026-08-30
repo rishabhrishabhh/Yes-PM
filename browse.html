@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse the case library — Yes PM</title>
+<meta name="description" content="Browse Yes PM's case library by industry, framework, and problem type.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">YP</span>
+      <span class="brand-word">Yes&nbsp;PM</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#how-it-works">How it works</a>
+      <a href="browse.html" class="nav-active">Browse cases</a>
+      <a href="index.html#app">Open the app</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="index.html#app">Get unstuck</a>
+  </div>
+</header>
+
+<main>
+  <section class="browse-hero">
+    <p class="eyebrow"><span class="eyebrow-dot"></span>The case library</p>
+    <h1 class="display-lg">Browse by what you're facing.</h1>
+    <p class="section-sub">Pick an industry to narrow the corpus, or see everything at once.</p>
+  </section>
+
+  <section class="browse-body">
+    <div id="categoryRow" class="category-row">
+      <p class="loading-line">Loading categories…</p>
+    </div>
+
+    <div id="browseResults" class="browse-results">
+      <p class="loading-line">Loading cases…</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="brand">
+      <span class="brand-mark">YP</span>
+      <span class="brand-word">Yes&nbsp;PM</span>
+    </div>
+    <p>The precedent engine for product managers.</p>
+  </div>
+</footer>
+
+<script src="browse.js"></script>
+</body>
+</html>
