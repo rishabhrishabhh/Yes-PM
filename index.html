@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yes PM -Precedent for your next product decision</title>
-<meta name="description" content="Yes PM matches your live product decision against real, resolved PM case studies - grounded precedent, not generic advice.">
+<title>Yes PM — Precedent for your next product decision</title>
+<meta name="description" content="Yes PM matches your live product decision against real, resolved PM case studies — grounded precedent, not generic advice.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
     </a>
     <nav class="nav-links">
       <a href="#how-it-works">How it works</a>
-      <a href="#features">What you get</a>
+      <a href="browse.html">Browse cases</a>
       <a href="#app">Open the app</a>
     </nav>
     <a class="btn btn-small btn-primary" href="#app" data-open-tab="unstuck">Get unstuck</a>
@@ -33,43 +33,39 @@
 <main id="top">
 
   <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span>Precedent-grounded PM guidance</p>
-        <h1 class="display-xl">You've hit this wall before.<br>Someone else already got through it.</h1>
-        <p class="hero-sub">Yes PM matches the messy, real decision you're stuck on against a growing corpus of resolved product cases -the instant recall of a great mentor, minus the waitlist.</p>
-        <div class="hero-actions">
-          <a href="#app" data-open-tab="unstuck" class="btn btn-primary">Describe your situation</a>
-          <a href="#app" data-open-tab="browse" class="btn btn-ghost">Browse the case library</a>
-        </div>
-        <div class="hero-proof">
-          <div class="proof-item"><strong>11,883+</strong><span>mentors waitlisted on ADPList right now</span></div>
-          <div class="proof-item"><strong>3</strong><span>ways in: learn, get unstuck, give back</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="case-stack">
-          <article class="case-file case-file--ghost">
-            <div class="case-file-tab">Case No. 042</div>
-          </article>
-          <article class="case-file case-file--ghost2">
-            <div class="case-file-tab">Case No. 017</div>
-          </article>
-          <article class="case-file case-file--main">
-            <div class="case-file-tab">Case No. 129</div>
-            <p class="case-file-kicker">Framework · RICE</p>
-            <h3 class="case-file-title">Engagement dipped 12% after a redesign</h3>
-            <p class="case-file-line"><span>Precedent —</span> Roll back the nav change only; isolate the metric before touching anything else.</p>
-            <div class="case-file-footer">
-              <span class="match-pill">match 0.94</span>
-              <span class="stamp">PRECEDENT FOUND</span>
-            </div>
-          </article>
-        </div>
-      </div>
+  <section class="hero hero--gradient">
+    <div class="hero-frame">
+      <p class="eyebrow eyebrow-onblue"><span class="eyebrow-dot"></span>Precedent-grounded PM guidance</p>
+      <h1 class="hero-wordmark">Yes PM</h1>
+      <div class="hero-subbar">PM one stop solution</div>
     </div>
+  </section>
+
+  <!-- ============ SOLUTIONS ROW (floats over hero) ============ -->
+  <section class="solutions-row" id="solutions">
+    <a class="solution-box" href="#app" data-open-tab="unstuck">
+      <span class="solution-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </span>
+      <h3>Get unstuck</h3>
+      <p>Describe a live, messy situation and get matched against real, resolved precedent.</p>
+    </a>
+
+    <a class="solution-box" href="browse.html">
+      <span class="solution-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      </span>
+      <h3>Browse &amp; learn</h3>
+      <p>Explore the case library by industry, framework, and problem type.</p>
+    </a>
+
+    <a class="solution-box" href="#app" data-open-tab="submit">
+      <span class="solution-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </span>
+      <h3>Give back</h3>
+      <p>Contribute a resolved situation, anonymized and tagged, to strengthen the corpus.</p>
+    </a>
   </section>
 
   <!-- ============ PROBLEM / SOLUTION ============ -->
@@ -85,21 +81,19 @@
         <ul class="docket-list">
           <li><strong>Post and hope.</strong> Ask in a Slack or Discord community and wait for someone with the right scar tissue to reply.</li>
           <li><strong>Book and wait.</strong> Free mentors on ADPList are real, but the waitlists are too.</li>
-          <li><strong>Ask an AI coach.</strong> Fast, but it's pattern-matching from training data -not a case that actually happened.</li>
+          <li><strong>Ask an AI coach.</strong> Fast, but it's pattern-matching from training data — not a case that actually happened.</li>
           <li><strong>Read a static library.</strong> Good for interview prep. It doesn't know what your situation looks like.</li>
         </ul>
       </div>
 
-      <div class="docket-divider" aria-hidden="true">
-        <span>→</span>
-      </div>
+      <div class="docket-divider" aria-hidden="true"><span>→</span></div>
 
       <div class="docket-col docket-col--after">
         <p class="docket-label docket-label--accent">With Yes&nbsp;PM</p>
         <ul class="docket-list docket-list--accent">
-          <li><strong>Describe the situation.</strong> Context, data, constraints -in your own words.</li>
+          <li><strong>Describe the situation.</strong> Context, data, constraints — in your own words.</li>
           <li><strong>Get matched instantly.</strong> Retrieval finds analogous cases by problem type, industry, stage, and framework.</li>
-          <li><strong>See what actually happened.</strong> Real diagnosis, decision, and outcome -not a best practice.</li>
+          <li><strong>See what actually happened.</strong> Real diagnosis, decision, and outcome — not a best practice.</li>
           <li><strong>Escalate if you need to.</strong> Bring the grounded precedent into a mentor conversation, instead of starting cold.</li>
         </ul>
       </div>
@@ -111,14 +105,14 @@
     <div class="section-head section-head--center">
       <p class="eyebrow"><span class="eyebrow-dot"></span>The loop</p>
       <h2 class="display-lg">One corpus. Three ways in.</h2>
-      <p class="section-sub">Every path -learning, getting unstuck, contributing -feeds the same shared case corpus, so it gets sharper with every PM it helps.</p>
+      <p class="section-sub">Every path — learning, getting unstuck, contributing — feeds the same shared case corpus, so it gets sharper with every PM it helps.</p>
     </div>
 
     <ol class="steps">
       <li class="step">
         <span class="step-no">01</span>
         <h3>Describe your situation</h3>
-        <p>Drop in the context, what's at stake, and what you've already tried -no rigid form, just the real mess.</p>
+        <p>Drop in the context, what's at stake, and what you've already tried — no rigid form, just the real mess.</p>
       </li>
       <li class="step">
         <span class="step-no">02</span>
@@ -128,51 +122,14 @@
       <li class="step">
         <span class="step-no">03</span>
         <h3>Read how it was actually resolved</h3>
-        <p>Situation, stakes, diagnosis, decision, outcome -the full shape of a real call, not a generic tip.</p>
+        <p>Situation, stakes, diagnosis, decision, outcome — the full shape of a real call, not a generic tip.</p>
       </li>
       <li class="step">
         <span class="step-no">04</span>
         <h3>Close the loop</h3>
-        <p>Once your own situation resolves, contribute it back anonymized -and strengthen the next match for someone else.</p>
+        <p>Once your own situation resolves, contribute it back anonymized — and strengthen the next match for someone else.</p>
       </li>
     </ol>
-  </section>
-
-  <!-- ============ FEATURES / THREE PILLARS ============ -->
-  <section class="pillars" id="features">
-    <div class="section-head section-head--center">
-      <p class="eyebrow"><span class="eyebrow-dot"></span>What you get</p>
-      <h2 class="display-lg">Built around three jobs, not one feature list.</h2>
-    </div>
-
-    <div class="pillar-grid">
-      <article class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        </div>
-        <p class="pillar-eyebrow">For aspiring &amp; early-career PMs</p>
-        <h3>Browse &amp; learn</h3>
-        <p>Filter a framework-tagged case library, open a case and see the framework applied step by step, then try your own answer before you reveal the resolution.</p>
-      </article>
-
-      <article class="pillar-card pillar-card--featured">
-        <div class="pillar-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <p class="pillar-eyebrow">For a PM stuck right now</p>
-        <h3>Get unstuck</h3>
-        <p>Submit a live, messy situation. Retrieval matches it against real precedent, ranked and framework-tagged, with a path to escalate into mentor discussion if it's still hard.</p>
-      </article>
-
-      <article class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <p class="pillar-eyebrow">For senior PMs &amp; mentors</p>
-        <h3>Give back</h3>
-        <p>Contribute a resolved situation, anonymized and tagged. Low-effort mentorship that builds reputation and makes the next match better for someone else.</p>
-      </article>
-    </div>
   </section>
 
   <!-- ============ WHY IT'S DIFFERENT ============ -->
@@ -184,30 +141,26 @@
 
     <div class="compare-grid">
       <div class="compare-row compare-row--head">
-        <span></span>
-        <span>Case libraries</span>
-        <span>Mentor networks</span>
-        <span>AI coaches</span>
-        <span class="compare-us">Yes PM</span>
+        <span></span><span>Case libraries</span><span>Mentor networks</span><span>AI coaches</span><span class="compare-us">Yes PM</span>
       </div>
       <div class="compare-row">
-        <span class="compare-metric">Real, resolved cases</span>
-        <span class="yes">Yes</span><span class="no">—</span><span class="no">—</span><span class="compare-us yes">Yes</span>
+        <span class="compare-metric" data-label="Metric">Real, resolved cases</span>
+        <span class="yes" data-label="Case libraries">Yes</span><span class="no" data-label="Mentor networks">—</span><span class="no" data-label="AI coaches">—</span><span class="compare-us yes" data-label="Yes PM">Yes</span>
       </div>
       <div class="compare-row">
-        <span class="compare-metric">Matched to your specific situation</span>
-        <span class="no">—</span><span class="maybe">Depends who answers</span><span class="maybe">Pattern-matched, not real</span><span class="compare-us yes">Yes</span>
+        <span class="compare-metric" data-label="Metric">Matched to your specific situation</span>
+        <span class="no" data-label="Case libraries">—</span><span class="maybe" data-label="Mentor networks">Depends who answers</span><span class="maybe" data-label="AI coaches">Pattern-matched, not real</span><span class="compare-us yes" data-label="Yes PM">Yes</span>
       </div>
       <div class="compare-row">
-        <span class="compare-metric">Available instantly, no waitlist</span>
-        <span class="yes">Yes</span><span class="no">Real waitlists</span><span class="yes">Yes</span><span class="compare-us yes">Yes</span>
+        <span class="compare-metric" data-label="Metric">Available instantly, no waitlist</span>
+        <span class="yes" data-label="Case libraries">Yes</span><span class="no" data-label="Mentor networks">Real waitlists</span><span class="yes" data-label="AI coaches">Yes</span><span class="compare-us yes" data-label="Yes PM">Yes</span>
       </div>
       <div class="compare-row">
-        <span class="compare-metric">Gets smarter with every user</span>
-        <span class="no">Static</span><span class="maybe">Depends on volunteers</span><span class="no">Doesn't learn your corpus</span><span class="compare-us yes">Compounds via contribution</span>
+        <span class="compare-metric" data-label="Metric">Gets smarter with every user</span>
+        <span class="no" data-label="Case libraries">Static</span><span class="maybe" data-label="Mentor networks">Depends on volunteers</span><span class="no" data-label="AI coaches">Doesn't learn your corpus</span><span class="compare-us yes" data-label="Yes PM">Compounds via contribution</span>
       </div>
     </div>
-    <p class="compare-footnote">Not a replacement for a mentor -an instant, precedent-grounded first take, with a clear path to loop a mentor in if you still need one.</p>
+    <p class="compare-footnote">Not a replacement for a mentor — an instant, precedent-grounded first take, with a clear path to loop a mentor in if you still need one.</p>
   </section>
 
   <!-- ============ PRODUCT APP ============ -->
@@ -215,13 +168,12 @@
     <div class="section-head section-head--center section-head--light">
       <p class="eyebrow"><span class="eyebrow-dot"></span>The product</p>
       <h2 class="display-lg">Open a real case, right now.</h2>
-      <p class="section-sub">This is the live app -describe a situation, browse the corpus, or contribute a case of your own.</p>
+      <p class="section-sub">This is the live app — describe a situation or contribute a case of your own. Looking to browse instead? <a href="browse.html" style="color:var(--amber); text-decoration:underline;">Head to the case library →</a></p>
     </div>
 
     <div class="app-shell">
       <nav class="tabs" role="tablist" aria-label="Yes PM sections">
         <button class="tab-btn active" data-tab="unstuck" role="tab" aria-selected="true">Get Unstuck</button>
-        <button class="tab-btn" data-tab="browse" role="tab" aria-selected="false">Browse &amp; Learn</button>
         <button class="tab-btn" data-tab="submit" role="tab" aria-selected="false">Submit a Case</button>
       </nav>
 
@@ -229,23 +181,16 @@
         <section id="unstuck" class="tab-content active" role="tabpanel">
           <p class="app-panel-label">Get unstuck</p>
           <h3 class="app-panel-title">Describe your situation</h3>
-          <p class="app-panel-hint">Context, what's at stake, and what you've already tried -write it like you'd tell a mentor, not a form.</p>
+          <p class="app-panel-hint">Context, what's at stake, and what you've already tried — write it like you'd tell a mentor, not a form.</p>
           <textarea id="situationInput" rows="6" placeholder="e.g. Engagement dropped 12% after our redesign shipped two weeks ago..."></textarea>
           <button id="findPrecedentBtn" class="btn btn-primary">Find precedent</button>
           <div id="results"></div>
         </section>
 
-        <section id="browse" class="tab-content" role="tabpanel">
-          <p class="app-panel-label">Browse &amp; learn</p>
-          <h3 class="app-panel-title">The case library</h3>
-          <p class="app-panel-hint">Framework-tagged, resolved situations from real product decisions.</p>
-          <div id="browseList"><p class="loading-line">Loading cases…</p></div>
-        </section>
-
         <section id="submit" class="tab-content" role="tabpanel">
           <p class="app-panel-label">Give back</p>
           <h3 class="app-panel-title">Contribute a case</h3>
-          <p class="app-panel-hint">Anonymize identifying details before you submit -the corpus only needs the situation and how it resolved.</p>
+          <p class="app-panel-hint">Anonymize identifying details before you submit — the corpus only needs the situation and how it resolved.</p>
           <form id="caseForm">
             <div class="field-row">
               <input type="text" id="caseId" placeholder="Case ID (e.g. case-001)" required>
@@ -259,12 +204,12 @@
               <input type="text" id="problemType" placeholder="Problem type">
             </div>
 
-            <textarea id="situation" placeholder="Situation -the setup and context"></textarea>
-            <textarea id="stakes" placeholder="Stakes -what was at risk"></textarea>
-            <textarea id="diagnosis" placeholder="Diagnosis -how it was analyzed"></textarea>
-            <textarea id="decision" placeholder="Decision -what was actually done"></textarea>
-            <textarea id="outcome" placeholder="Outcome -result and metrics"></textarea>
-            <textarea id="precedent" placeholder="Precedent line -one sentence takeaway"></textarea>
+            <textarea id="situation" placeholder="Situation — the setup and context"></textarea>
+            <textarea id="stakes" placeholder="Stakes — what was at risk"></textarea>
+            <textarea id="diagnosis" placeholder="Diagnosis — how it was analyzed"></textarea>
+            <textarea id="decision" placeholder="Decision — what was actually done"></textarea>
+            <textarea id="outcome" placeholder="Outcome — result and metrics"></textarea>
+            <textarea id="precedent" placeholder="Precedent line — one sentence takeaway"></textarea>
 
             <button type="submit" class="btn btn-primary">Upload case</button>
           </form>
@@ -298,7 +243,6 @@
 
 <script src="app.js"></script>
 <script>
-  // Smooth-scroll + tab preselect for CTAs that link into the app section
   document.querySelectorAll('[data-open-tab]').forEach((el) => {
     el.addEventListener('click', () => {
       const tab = el.dataset.openTab;
