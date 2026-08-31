@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yes PM - Precedent for your next product decision</title>
-<meta name="description" content="Yes PM matches your live product decision against real, resolved PM case studies -grounded precedent, not generic advice.">
+<title>Yes PM — Precedent for your next product decision</title>
+<meta name="description" content="Yes PM matches your live product decision against real, resolved PM case studies — grounded precedent, not generic advice.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -32,40 +32,48 @@
 
 <main id="top">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero hero--gradient">
-    <div class="hero-frame">
+  <!-- ============ HERO — full-bleed video ============ -->
+  <section class="hero hero--video">
+    <video class="hero-bg-video" autoplay muted loop playsinline poster="poster.jpg">
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay" aria-hidden="true"></div>
+
+    <div class="hero-video-copy">
       <p class="eyebrow eyebrow-onblue"><span class="eyebrow-dot"></span>Precedent-grounded PM guidance</p>
-      <h1 class="hero-wordmark">Yes PM</h1>
-      <div class="hero-subbar">PM one stop solution</div>
+      <h1 class="hero-wordmark hero-wordmark--video">Yes PM</h1>
+      <p class="hero-video-tagline">Make confident product decisions in minutes using real-world precedent.</p>
+      <a class="hero-chat-prompt" href="#app" data-open-tab="unstuck">
+        <span class="chat-dot" aria-hidden="true"></span>
+        Hello! How do I help you today?
+      </a>
     </div>
-  </section>
 
-  <!-- ============ SOLUTIONS ROW (floats over hero) ============ -->
-  <section class="solutions-row" id="solutions">
-    <a class="solution-box" href="#app" data-open-tab="unstuck">
-      <span class="solution-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </span>
-      <h3>Get unstuck</h3>
-      <p>Describe a live, messy situation and get matched against real, resolved precedent.</p>
-    </a>
+    <div class="solutions-row solutions-row--floating">
+      <a class="solution-box solution-box--glass" href="#app" data-open-tab="unstuck">
+        <span class="solution-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>
+        <h3>Get unstuck</h3>
+        <p>Describe a live, messy situation and get matched against real, resolved precedent.</p>
+      </a>
 
-    <a class="solution-box" href="browse.html">
-      <span class="solution-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-      </span>
-      <h3>Browse &amp; learn</h3>
-      <p>Explore the case library by industry, framework, and problem type.</p>
-    </a>
+      <a class="solution-box solution-box--glass" href="browse.html">
+        <span class="solution-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Browse &amp; learn</h3>
+        <p>Explore the case library by industry, framework, and problem type.</p>
+      </a>
 
-    <a class="solution-box" href="#app" data-open-tab="submit">
-      <span class="solution-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </span>
-      <h3>Give back</h3>
-      <p>Contribute a resolved situation, anonymized and tagged, to strengthen the corpus.</p>
-    </a>
+      <a class="solution-box solution-box--glass" href="#app" data-open-tab="submit">
+        <span class="solution-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>
+        <h3>Give back</h3>
+        <p>Contribute a resolved situation, anonymized and tagged, to strengthen the corpus.</p>
+      </a>
+    </div>
   </section>
 
   <!-- ============ PROBLEM / SOLUTION ============ -->
@@ -81,7 +89,7 @@
         <ul class="docket-list">
           <li><strong>Post and hope.</strong> Ask in a Slack or Discord community and wait for someone with the right scar tissue to reply.</li>
           <li><strong>Book and wait.</strong> Free mentors on ADPList are real, but the waitlists are too.</li>
-          <li><strong>Ask an AI coach.</strong> Fast, but it's pattern-matching from training data -not a case that actually happened.</li>
+          <li><strong>Ask an AI coach.</strong> Fast, but it's pattern-matching from training data — not a case that actually happened.</li>
           <li><strong>Read a static library.</strong> Good for interview prep. It doesn't know what your situation looks like.</li>
         </ul>
       </div>
@@ -91,9 +99,9 @@
       <div class="docket-col docket-col--after">
         <p class="docket-label docket-label--accent">With Yes&nbsp;PM</p>
         <ul class="docket-list docket-list--accent">
-          <li><strong>Describe the situation.</strong> Context, data, constraints -in your own words.</li>
+          <li><strong>Describe the situation.</strong> Context, data, constraints — in your own words.</li>
           <li><strong>Get matched instantly.</strong> Retrieval finds analogous cases by problem type, industry, stage, and framework.</li>
-          <li><strong>See what actually happened.</strong> Real diagnosis, decision, and outcome -not a best practice.</li>
+          <li><strong>See what actually happened.</strong> Real diagnosis, decision, and outcome — not a best practice.</li>
           <li><strong>Escalate if you need to.</strong> Bring the grounded precedent into a mentor conversation, instead of starting cold.</li>
         </ul>
       </div>
@@ -105,14 +113,14 @@
     <div class="section-head section-head--center">
       <p class="eyebrow"><span class="eyebrow-dot"></span>The loop</p>
       <h2 class="display-lg">One corpus. Three ways in.</h2>
-      <p class="section-sub">Every path -learning, getting unstuck, contributing -feeds the same shared case corpus, so it gets sharper with every PM it helps.</p>
+      <p class="section-sub">Every path — learning, getting unstuck, contributing — feeds the same shared case corpus, so it gets sharper with every PM it helps.</p>
     </div>
 
     <ol class="steps">
       <li class="step">
         <span class="step-no">01</span>
         <h3>Describe your situation</h3>
-        <p>Drop in the context, what's at stake, and what you've already tried -no rigid form, just the real mess.</p>
+        <p>Drop in the context, what's at stake, and what you've already tried — no rigid form, just the real mess.</p>
       </li>
       <li class="step">
         <span class="step-no">02</span>
@@ -122,12 +130,12 @@
       <li class="step">
         <span class="step-no">03</span>
         <h3>Read how it was actually resolved</h3>
-        <p>Situation, stakes, diagnosis, decision, outcome -the full shape of a real call, not a generic tip.</p>
+        <p>Situation, stakes, diagnosis, decision, outcome — the full shape of a real call, not a generic tip.</p>
       </li>
       <li class="step">
         <span class="step-no">04</span>
         <h3>Close the loop</h3>
-        <p>Once your own situation resolves, contribute it back anonymized -and strengthen the next match for someone else.</p>
+        <p>Once your own situation resolves, contribute it back anonymized — and strengthen the next match for someone else.</p>
       </li>
     </ol>
   </section>
@@ -160,7 +168,7 @@
         <span class="no" data-label="Case libraries">Static</span><span class="maybe" data-label="Mentor networks">Depends on volunteers</span><span class="no" data-label="AI coaches">Doesn't learn your corpus</span><span class="compare-us yes" data-label="Yes PM">Compounds via contribution</span>
       </div>
     </div>
-    <p class="compare-footnote">Not a replacement for a mentor - an instant, precedent-grounded first take, with a clear path to loop a mentor in if you still need one.</p>
+    <p class="compare-footnote">Not a replacement for a mentor — an instant, precedent-grounded first take, with a clear path to loop a mentor in if you still need one.</p>
   </section>
 
   <!-- ============ PRODUCT APP ============ -->
@@ -168,7 +176,7 @@
     <div class="section-head section-head--center section-head--light">
       <p class="eyebrow"><span class="eyebrow-dot"></span>The product</p>
       <h2 class="display-lg">Open a real case, right now.</h2>
-      <p class="section-sub">This is the live app - describe a situation or contribute a case of your own. Looking to browse instead? <a href="browse.html" style="color:var(--amber); text-decoration:underline;">Head to the case library →</a></p>
+      <p class="section-sub">This is the live app — describe a situation or contribute a case of your own. Looking to browse instead? <a href="browse.html" style="color:var(--amber); text-decoration:underline;">Head to the case library →</a></p>
     </div>
 
     <div class="app-shell">
@@ -181,7 +189,7 @@
         <section id="unstuck" class="tab-content active" role="tabpanel">
           <p class="app-panel-label">Get unstuck</p>
           <h3 class="app-panel-title">Describe your situation</h3>
-          <p class="app-panel-hint">Context, what's at stake, and what you've already tried - write it like you'd tell a mentor, not a form.</p>
+          <p class="app-panel-hint">Context, what's at stake, and what you've already tried — write it like you'd tell a mentor, not a form.</p>
           <textarea id="situationInput" rows="6" placeholder="e.g. Engagement dropped 12% after our redesign shipped two weeks ago..."></textarea>
           <button id="findPrecedentBtn" class="btn btn-primary">Find precedent</button>
           <div id="results"></div>
@@ -190,7 +198,7 @@
         <section id="submit" class="tab-content" role="tabpanel">
           <p class="app-panel-label">Give back</p>
           <h3 class="app-panel-title">Contribute a case</h3>
-          <p class="app-panel-hint">Anonymize identifying details before you submit - the corpus only needs the situation and how it resolved.</p>
+          <p class="app-panel-hint">Anonymize identifying details before you submit — the corpus only needs the situation and how it resolved.</p>
           <form id="caseForm">
             <div class="field-row">
               <input type="text" id="caseId" placeholder="Case ID (e.g. case-001)" required>
@@ -204,12 +212,12 @@
               <input type="text" id="problemType" placeholder="Problem type">
             </div>
 
-            <textarea id="situation" placeholder="Situation - the setup and context"></textarea>
-            <textarea id="stakes" placeholder="Stakes - what was at risk"></textarea>
-            <textarea id="diagnosis" placeholder="Diagnosis - how it was analyzed"></textarea>
-            <textarea id="decision" placeholder="Decision - what was actually done"></textarea>
-            <textarea id="outcome" placeholder="Outcome - result and metrics"></textarea>
-            <textarea id="precedent" placeholder="Precedent line - one sentence takeaway"></textarea>
+            <textarea id="situation" placeholder="Situation — the setup and context"></textarea>
+            <textarea id="stakes" placeholder="Stakes — what was at risk"></textarea>
+            <textarea id="diagnosis" placeholder="Diagnosis — how it was analyzed"></textarea>
+            <textarea id="decision" placeholder="Decision — what was actually done"></textarea>
+            <textarea id="outcome" placeholder="Outcome — result and metrics"></textarea>
+            <textarea id="precedent" placeholder="Precedent line — one sentence takeaway"></textarea>
 
             <button type="submit" class="btn btn-primary">Upload case</button>
           </form>
