@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Get unstuck — Yes PM</title>
-<meta name="description" content="Describe a live, messy product situation and get matched instantly against real, resolved PM case studies.">
+<title>Browse &amp; learn — Yes PM</title>
+<meta name="description" content="Browse Yes PM's case library by industry, framework, and problem type.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     </a>
     <nav class="nav-links">
       <a href="how-it-works.html">How it works</a>
-      <a href="browse.html">Browse &amp; learn</a>
+      <a href="browse.html" class="nav-active">Browse &amp; learn</a>
       <a href="give-back.html">Give back</a>
     </nav>
     <a class="btn btn-small btn-primary" href="unstuck.html">Get unstuck</a>
@@ -30,26 +30,21 @@
 </header>
 
 <main>
-
-  <section class="page-hero">
-    <p class="eyebrow"><span class="eyebrow-dot"></span>Get unstuck</p>
-    <h1 class="display-lg">Describe your situation.</h1>
-    <p class="section-sub">Context, what's at stake, and what you've already tried — write it like you'd tell a mentor, not a form.</p>
+  <section class="browse-hero">
+    <p class="eyebrow"><span class="eyebrow-dot"></span>The case library</p>
+    <h1 class="display-lg">Browse by what you're facing.</h1>
+    <p class="section-sub">Pick an industry to narrow the corpus, or see everything at once.</p>
   </section>
 
-  <section class="single-app-section">
-    <div class="single-app-shell">
-      <div class="single-app-body">
-        <p class="app-panel-label">Get unstuck</p>
-        <h2 class="app-panel-title">Find precedent</h2>
-        <p class="app-panel-hint">The retrieval engine matches your situation against real, resolved cases by framework, industry, and problem type.</p>
-        <textarea id="situationInput" rows="6" placeholder="e.g. Engagement dropped 12% after our redesign shipped two weeks ago..."></textarea>
-        <button id="findPrecedentBtn" class="btn btn-primary">Find precedent</button>
-        <div id="results"></div>
-      </div>
+  <section class="browse-body">
+    <div id="categoryRow" class="category-row">
+      <p class="loading-line">Loading categories…</p>
+    </div>
+
+    <div id="browseResults" class="browse-results">
+      <p class="loading-line">Loading cases…</p>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
@@ -62,6 +57,6 @@
   </div>
 </footer>
 
-<script src="unstuck.js"></script>
+<script src="browse.js"></script>
 </body>
 </html>
