@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get unstuck — Yes PM</title>
+<meta name="description" content="Describe a live, messy product situation and get matched instantly against real, resolved PM case studies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="tech-bg">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">YP</span>
+      <span class="brand-word">Yes&nbsp;PM</span>
+    </a>
+    <nav class="nav-links">
+      <a href="learn.html">Browse &amp; learn</a>
+      <a href="give-back.html">Give back</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="unstuck.html">Get unstuck</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow"><span class="eyebrow-dot"></span>Get unstuck</p>
+    <h1 class="display-lg">Describe your situation.</h1>
+    <p class="section-sub">Context, what's at stake, and what you've already tried — write it like you'd tell a mentor, not a form.</p>
+  </section>
+
+  <section class="single-app-section">
+    <div class="single-app-shell">
+      <div class="single-app-body">
+        <p class="app-panel-label">Get unstuck</p>
+        <h2 class="app-panel-title">Find precedent</h2>
+        <p class="app-panel-hint">The retrieval engine matches your situation against real, resolved cases by framework, industry, and problem type.</p>
+        <textarea id="situationInput" rows="6" placeholder="e.g. Engagement dropped 12% after our redesign shipped two weeks ago..."></textarea>
+        <button id="findPrecedentBtn" class="btn btn-primary">Find precedent</button>
+        <div id="results"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="brand">
+      <span class="brand-mark">YP</span>
+      <span class="brand-word">Yes&nbsp;PM</span>
+    </div>
+    <p>The precedent engine for product managers.</p>
+  </div>
+</footer>
+
+<script src="unstuck.js"></script>
+</body>
+</html>

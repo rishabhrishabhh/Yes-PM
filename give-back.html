@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Give back — Yes PM</title>
+<meta name="description" content="Contribute a resolved product situation, anonymized and tagged, to strengthen the Yes PM case corpus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="tech-bg">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">YP</span>
+      <span class="brand-word">Yes&nbsp;PM</span>
+    </a>
+    <nav class="nav-links">
+      <a href="learn.html">Browse &amp; learn</a>
+      <a href="give-back.html" class="nav-active">Give back</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="unstuck.html">Get unstuck</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow"><span class="eyebrow-dot"></span>Give back</p>
+    <h1 class="display-lg">Contribute a case.</h1>
+    <p class="section-sub">Anonymize identifying details before you submit — the corpus only needs the situation and how it resolved.</p>
+  </section>
+
+  <section class="single-app-section">
+    <div class="single-app-shell">
+      <div class="single-app-body">
+        <p class="app-panel-label">Give back</p>
+        <h2 class="app-panel-title">Upload a resolved situation</h2>
+        <p class="app-panel-hint">Situation, stakes, diagnosis, decision, outcome — the full shape of a real call, not a generic tip.</p>
+        <form id="caseForm">
+          <div class="field-row">
+            <input type="text" id="caseId" placeholder="Case ID (e.g. case-001)" required>
+            <input type="text" id="title" placeholder="Case title" required>
+          </div>
+
+          <div class="metadata-row">
+            <input type="text" id="framework" placeholder="Framework (e.g. RICE)">
+            <input type="text" id="industry" placeholder="Industry">
+            <input type="text" id="companyStage" placeholder="Company stage">
+            <input type="text" id="problemType" placeholder="Problem type">
+          </div>
+
+          <textarea id="situation" placeholder="Situation — the setup and context"></textarea>
+          <textarea id="stakes" placeholder="Stakes — what was at risk"></textarea>
+          <textarea id="diagnosis" placeholder="Diagnosis — how it was analyzed"></textarea>
+          <textarea id="decision" placeholder="Decision — what was actually done"></textarea>
+          <textarea id="outcome" placeholder="Outcome — result and metrics"></textarea>
+          <textarea id="precedent" placeholder="Precedent line — one sentence takeaway"></textarea>
+
+          <button type="submit" class="btn btn-primary">Upload case</button>
+        </form>
+        <div id="submitStatus"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="brand">
+      <span class="brand-mark">YP</span>
+      <span class="brand-word">Yes&nbsp;PM</span>
+    </div>
+    <p>The precedent engine for product managers.</p>
+  </div>
+</footer>
+
+<script src="give-back.js"></script>
+</body>
+</html>
